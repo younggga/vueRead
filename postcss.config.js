@@ -1,5 +1,10 @@
 module.exports = {
   plugins: {
-    autoprefixer: {}
+    autoprefixer: {},
+    "postcss-px-to-viewport": {
+      viewportWidth: 750,
+      minPixelValue: 1,
+      selectorBlackList: [".el-switch"]
+    }
   }
 };
